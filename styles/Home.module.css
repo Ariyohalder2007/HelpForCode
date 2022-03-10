@@ -53,7 +53,7 @@
 }
 
 .description {
-  margin: 4rem 0;
+  margin: 2.5rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
 }
@@ -126,4 +126,9 @@
   margin: 0 2rem;
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+.myImg{
+  border: 2px solid black;
+  border-radius: .5rem;
 }
