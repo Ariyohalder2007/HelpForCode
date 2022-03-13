@@ -17,7 +17,7 @@ const Blog = () => {
     <div className={styles.container}>
     <main className={styles.main}>
 
-
+    <div>
      {blogs.map((blogItem)=>{
        return <div key={blogItem.slug}>
            <Link href={'/blogpost/'+blogItem.slug}>
@@ -28,6 +28,7 @@ const Blog = () => {
      <p>{blogItem.metadesc}</p>
        </div>
      })}
+     </div>
 
   </main>
   </div>
