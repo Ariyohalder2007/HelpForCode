@@ -1,5 +1,4 @@
-import React,{useEffect, useState} from 'react'
-import {useRouter} from 'next/router'
+import React,{ useState} from 'react'
 import styles from '../../styles/BlogPost.module.css'
 
 const Slug = (props) => {
@@ -27,5 +26,4 @@ export async function getServerSideProps(context) {
     props: {blog}, // will be passed to the page component as props
   }
 }
-
 export default Slug
