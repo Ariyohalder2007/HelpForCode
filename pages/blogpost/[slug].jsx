@@ -3,6 +3,9 @@ import styles from '../../styles/BlogPost.module.css'
 
 const Slug = (props) => {
   const [blog, setblog] = useState(props.blog)
+  function createMarkup() {
+    return {__html: blog.content};
+  }
 
 
   return (
@@ -11,9 +14,9 @@ const Slug = (props) => {
      <h1>{blog && blog.title}</h1>
      <span>{blog && blog.author}</span>
      <hr />
-     <p>
-       {blog && blog.content}
-     </p>
+
+       {blog && <p dangerouslySetInnerHTML={createMarkup()}/>}
+
      </main>
    </div>
   )
